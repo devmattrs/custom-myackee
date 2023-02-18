@@ -49,3 +49,35 @@
 @import 'align';
 @import 'spacer';
 @import 'color';
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+@media (max-width: 1024px) {
+	::-webkit-scrollbar {
+	width: 0px;
+	}
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 99px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
